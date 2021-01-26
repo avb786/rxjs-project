@@ -1,0 +1,97 @@
+<div class="container">
+  <h1 class="text-secondary">Change Detection</h1>
+  <div class="d-flex flex-column bd-highlight mb-3">
+    <div class="p-2 bd-highlight">
+      <iframe
+        class="iframe-youtube"
+        height="396"
+        src="https://www.youtube.com/embed/XTNL4WJRCrM?list=PL4ghowaPhrX3PxiScj4vAqKI1kjv_qi1E"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <div class="p-2 bd-highlight">
+      <p class="list-group-item-primary p-2">
+        So basically whenever we update some data in ts variables and show on
+        the template , and when it gets manipulate with UI(template) then the
+        changes happen is basically know as
+        <strong>Change Detection</strong>. In simple words , it synchronises the
+        model changes to view.
+      </p>
+    </div>
+    <div class="p-2 bd-highlight">
+      <div class="list-group-item-primary p-2">
+        <div>
+          <strong>Should Change Detection happen?</strong><br />
+          As soon as an application state changes.
+        </div>
+      </div>
+    </div>
+    <div class="p-2 bd-highlight">
+      <div class="list-group-item-primary p-2">
+        <div>
+          <strong>What can cause state change?</strong><br />
+          <ul>
+            <li>Event callback (e.g click, change)</li>
+            <li>Network call (XHR)</li>
+            <li>Timer (setTimeout, setInterval)</li>
+          </ul>
+          <span
+            >-So a common factor or similarities of these are , they are
+            asynchronous and kept to change the state</span
+          >
+        </div>
+      </div>
+    </div>
+    <div class="p-2 bd-highlight">
+      <div class="list-group-item-primary p-2">
+        <div>
+          <strong>Zone.js</strong><br />
+          <ul>
+            <li>
+              So basically zone help us to perform or help change detection
+              mechanism to coordinate with asynchronous events .
+            </li>
+            <li>Not a part of Angular Framework</li>
+            <li>
+              The mechanism which helps change detection is
+              <strong> Patches macro task</strong>.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="p-2 bd-highlight">
+        <div class="list-group-item-primary p-2">
+          <div>
+            <strong>Change Detection Stratergy</strong><br />
+            <ul>
+              <li>
+                Default
+              </li>
+              <li>OnPush</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    <div class="p-2 bd-highlight">
+      For e.g:
+      <div class="bg-muted">
+        <div class="form-group">
+          <label for="my-input">Name</label>
+          <input
+            id="my-input"
+            [(ngModel)]="nameOfPerson"
+            class="form-control"
+            type="text"
+            name="fname"
+          />
+        </div>
+      </div>
+      <div class="bg-primary text-white">
+        {{ nameOfPerson }}
+      </div>
+    </div>  
+  </div>
+</div>

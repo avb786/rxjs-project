@@ -56,7 +56,7 @@
             <li>Not a part of Angular Framework</li>
             <li>
               The mechanism which helps change detection is
-              <strong> Patches macro task</strong>.
+              <strong>Monkey Patches macro task</strong>.
             </li>
           </ul>
         </div>
@@ -93,5 +93,36 @@
         {{ nameOfPerson }}
       </div>
     </div>  
+    <div class="p-2 bd-highlight">
+      <div class="list-group-item-primary p-2">
+        <div>
+          <strong>Change Deetection Example</strong><br />
+          <ul>
+            <li>
+             <app-child [data] = "exampleObj"></app-child>
+            </li>
+            <li>
+              <button (click)="change()">Change name</button>
+            </li>
+            <li>
+              <button (click)="changeObject()">Change Object</button>
+            </li>
+            <li>
+             Methods of Change Detection.
+             <ul>
+               <li>
+                 Count: {{count}}
+               </li>
+               <li>
+                 <button (click)="detach()">detach</button>
+                 <button (click)="reattach()">reattach</button>
+                 <button (click)="detect()">detect</button>
+               </li>
+             </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
 </div>

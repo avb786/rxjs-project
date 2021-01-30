@@ -17,17 +17,18 @@ export class HeadersComponent implements OnInit {
           icon:'pi pi-fw pi-file',
           items:[
               {
-                  label:'New',
+                  label:'Topics',
                   icon:'pi pi-fw pi-plus',
                   items:[
                   {
                       label:'On Change Detection',
-                      icon:'pi pi-fw pi-bookmark',
+                      icon:'pi pi-list',
                       routerLink: 'changeDetection'
                   },
                   {
-                      label:'Video',
-                      icon:'pi pi-fw pi-video'
+                      label:'View Encapsulation',
+                      icon:'pi pi-list',
+                      routerLink: 'viewEncapsulation'
                   },
 
                   ]
@@ -46,12 +47,13 @@ export class HeadersComponent implements OnInit {
           ]
       },
       {
-          label:'Edit',
+          label:'RxJs Operators',
           icon:'pi pi-fw pi-pencil',
           items:[
               {
-                  label:'Left',
-                  icon:'pi pi-fw pi-align-left'
+                  label:'FromEvent',
+                  icon:'pi pi-fw pi-align-left',
+                  routerLink: 'fromEvent'
               },
               {
                   label:'Right',

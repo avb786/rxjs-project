@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <strong>{{message}}</strong>
+            <p>Interval Takes 1 argument of time-interval</p>
+            <p>Timer Takes 2 argument of (Delay,time-interval)</p>
+            <button (click)="toggleOperators()" class="btn btn-primary"><span *ngIf="toggleOnOff">Start Interval</span><span *ngIf="!toggleOnOff">Start Timer</span> </button>
+        </div>
+        <div class="col">
+            <div class="card">
+                <h5 class="card-header">Interval Event : User 1</h5>
+                <div class="card-body">
+                    <ul id="elContainer" class="list-unstyled">
+                        <li>Text</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <h5 class="card-header">Interval Event : User 2</h5>
+                <div class="card-body">
+                    <ul id="elContainer2" class="list-unstyled">
+                        <li>Text</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <h5 class="card-header">Interval Event : User 3</h5>
+                <div class="card-body">
+                    <ul id="elContainer3" class="list-unstyled">
+                        <li>Text</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

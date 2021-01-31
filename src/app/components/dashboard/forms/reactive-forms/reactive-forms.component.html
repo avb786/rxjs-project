@@ -1,0 +1,34 @@
+<div class="container border p-2 col-md-6">
+    <h1 class=" text-center text-danger">Reactive Form</h1>
+    <form [formGroup]="myReactiveForm" (ngSubmit)="onSubmit()">
+        <div formGroupName="userDetails">
+        <div class="form-group">
+            <label for="my-input">Username</label>
+            <input id="my-input" class="form-control" type="text" formControlName="username">
+        </div>
+        <div class="form-group">
+            <label for="my-input">Email</label>
+            <input id="my-input" class="form-control" type="text" formControlName="email">
+            <small class="text-danger" *ngIf="!myReactiveForm.get('userDetails.email')?.valid && myReactiveForm.get('userDetails.email')?.touched">Please Enter valid email</small>
+        </div>
+    </div>
+        <div class="form-group">
+            <label for="my-select">Course</label>
+            <select id="my-select" class="custom-select" formControlName="course">
+                <option value="angular">Angular</option>
+                <option value="react">React</option>
+                <option value="vue">Vue</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <div><strong>Gender</strong></div>
+            <label for="my-input">Male</label>
+            <input  id="my-input"  type="radio" value="male" formControlName="gender">
+            <br>
+            <label for="my-input">Female</label>
+            <input id="my-input" type="radio" value="female"  formControlName="gender">
+        </div>
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+   
+</div>

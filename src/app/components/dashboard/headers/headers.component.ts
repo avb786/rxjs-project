@@ -34,8 +34,15 @@ export class HeadersComponent implements OnInit {
                   ]
               },
               {
-                  label:'Delete',
-                  icon:'pi pi-fw pi-trash'
+                  label:'Forms',
+                  icon:'pi pi-fw pi-file',
+                  items: [
+                    {
+                        label:'Reactive-Forms',
+                        icon:'pi pi-list',
+                        routerLink: 'reactiveForms'
+                    },
+                  ]
               },
               {
                   separator:true
@@ -56,8 +63,9 @@ export class HeadersComponent implements OnInit {
                   routerLink: 'fromEvent'
               },
               {
-                  label:'Right',
-                  icon:'pi pi-fw pi-align-right'
+                  label:'Interval-Timer',
+                  icon:'pi pi-fw pi-align-right',
+                  routerLink: 'intervalTimer'
               },
               {
                   label:'Center',

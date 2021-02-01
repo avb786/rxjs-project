@@ -1,3 +1,4 @@
+<div class="row">
 <div class="container border p-2 col-md-6">
     <h1 class=" text-center text-danger">Reactive Form</h1>
     <form [formGroup]="myReactiveForm" (ngSubmit)="onSubmit()">
@@ -5,6 +6,9 @@
         <div class="form-group">
             <label for="my-input">Username</label>
             <input id="my-input" class="form-control" type="text" formControlName="username">
+            <small class="text-danger" *ngIf="myReactiveForm.get('userDetails.username')?.errors?.nameNotAllowed">Name is reserved</small>
+            <small class="text-danger" *ngIf="myReactiveForm.get('userDetails.username')?.errors?.required && myReactiveForm.get('userDetails.username')?.touched">Name is required</small>
+
         </div>
         <div class="form-group">
             <label for="my-input">Email</label>
@@ -28,7 +32,19 @@
             <label for="my-input">Female</label>
             <input id="my-input" type="radio" value="female"  formControlName="gender">
         </div>
+        <div class="form-group" formArrayName="skills">
+            <label for="skills">Skills</label>
+            <ng-container *ngFor="let skill of myReactiveForm.get('skills')?.controls; index as i">
+                <input id="skills" class="form-control mt-2" type="text" formControlName="{{i}}" placeholder="Add Skills">
+            </ng-container>
+            <button type="button" (click)="onAddSkills()" class="btn btn-danger mt-3">Add Skills</button>
+        </div>
         <button class="btn btn-primary" type="submit">Submit</button>
     </form>
    
+</div>
+<div class="container border col-md-3">
+    <h1 class="text-center text-success">Form Data</h1>
+   {{ formBodyData | json}}
+    </div>
 </div>

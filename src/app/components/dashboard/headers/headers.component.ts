@@ -73,8 +73,9 @@ export class HeadersComponent implements OnInit {
                   routerLink: 'intervalTimer'
               },
               {
-                  label:'Center',
-                  icon:'pi pi-fw pi-align-center'
+                  label:'Of-From',
+                  icon:'pi pi-fw pi-align-center',
+                  routerLink: 'ofFromEvent'
               },
               {
                   label:'Justify',

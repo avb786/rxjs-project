@@ -7,6 +7,7 @@ import { FromEventComponent } from './Observables/from-event/from-event.componen
 import { IntervalTimerComponent } from './Observables/interval-timer/interval-timer.component';
 import { ViewEncapsulationComponent } from './view-encapsulation/view-encapsulation.component';
 import { ParentInputComponent } from './input-output/parent-input/parent-input.component';
+import { OfFromEventComponent } from './Observables/of-from-event/of-from-event.component';
 
 const routes: Routes = [
   {
@@ -16,7 +17,8 @@ const routes: Routes = [
       { path: 'fromEvent', component: FromEventComponent, pathMatch: 'full' },
       { path: 'intervalTimer', component: IntervalTimerComponent, pathMatch: 'full' },
       { path: 'reactiveForms', component: ReactiveFormsComponent, pathMatch: 'full' },
-      { path: 'inputOutput', component: ParentInputComponent, pathMatch: 'full' }
+      { path: 'inputOutput', component: ParentInputComponent, pathMatch: 'full' },
+      { path: 'ofFromEvent', component: OfFromEventComponent, pathMatch: 'full' }
     ]
   },
 

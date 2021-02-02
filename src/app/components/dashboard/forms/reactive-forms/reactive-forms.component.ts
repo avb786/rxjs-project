@@ -17,7 +17,7 @@ export class ReactiveFormsComponent implements OnInit {
     this.myReactiveForm = new FormGroup({
       'userDetails': new FormGroup({
         'username': new FormControl(null, [Validators.required, this.notAllowedNameData.bind(this)]),
-        'email': new FormControl(null, [Validators.email, Validators.required], this.notAllowedEmailData)
+        'email': new FormControl(null, [Validators.email, Validators.required])// this.notAllowedEmailData in email After Email Validations
       }),
       'course': new FormControl('vue'),
       'gender': new FormControl('male'),

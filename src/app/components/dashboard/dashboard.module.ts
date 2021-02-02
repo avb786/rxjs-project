@@ -16,9 +16,10 @@ import { IntervalTimerComponent } from './Observables/interval-timer/interval-ti
 import { ReactiveFormsComponent } from './forms/reactive-forms/reactive-forms.component';
 import { ParentInputComponent } from './input-output/parent-input/parent-input.component';
 import { ChildInputComponent } from './input-output/child-input/child-input.component';
+import { OfFromEventComponent } from './Observables/of-from-event/of-from-event.component';
 
 @NgModule({
-  declarations: [DashboardComponent, HeadersComponent, ChangeDetectionComponent, ChildComponent, ViewEncapsulationComponent, ChildEncapsulatedComponent, FromEventComponent, IntervalTimerComponent, ReactiveFormsComponent, ParentInputComponent, ChildInputComponent],
+  declarations: [DashboardComponent, HeadersComponent, ChangeDetectionComponent, ChildComponent, ViewEncapsulationComponent, ChildEncapsulatedComponent, FromEventComponent, IntervalTimerComponent, ReactiveFormsComponent, ParentInputComponent, ChildInputComponent, OfFromEventComponent],
   imports: [
     CommonModule,
     DashboardRoutingModule,

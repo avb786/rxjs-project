@@ -1,0 +1,18 @@
+<div class="container border">
+    <h1 class="text-center text-secondary">Parent Component </h1>
+    <strong class=" badge badge-success">{{messageFromChildRecieved}}</strong>
+    <div class="d-flex flex-row">
+        <div class="col-md-12 ">
+                <div class="form-group">
+                    <label for="my-item">ADD ITEM(s)</label>
+                    <input #items id="my-item" class="form-control" type="text" name="item">
+                </div>
+                <div class="form-group">
+                    <label for="my-value">ADD VALUE</label>
+                    <input #values id="my-value" class="form-control" type="text" name="value">
+                </div>
+                <button type="button" (click)="dataSendToChild(items, values)">Submit</button>
+                    <app-child-input [recieveItem] = "toChildItem" [recieveValue]="toChildValue" (messageRecieved)="parentFunction($event)" ></app-child-input>
+        </div>
+    </div>
+</div>

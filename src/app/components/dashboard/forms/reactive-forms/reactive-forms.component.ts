@@ -25,11 +25,26 @@ export class ReactiveFormsComponent implements OnInit {
         new FormControl(null)
       ])
     })
+    // this.myReactiveForm.valueChanges.subscribe(res => {
+    //   console.log("valueChanges", res)
+    // })
+    this.myReactiveForm.statusChanges.subscribe(res => {
+      console.log("statusChanges", res)
+    })
   }
   onSubmit() {
     console.log(this.myReactiveForm)
     if(this.myReactiveForm.valid) {
-      this.formBodyData = this.myReactiveForm.value;;
+      this.formBodyData = this.myReactiveForm.value;
+      this.myReactiveForm.reset({
+        'userDetails' : {
+          'username': '',
+          'email': ''
+        },
+        course : 'react',
+        gender: 'male',
+        skills: ['']
+      });
     } else {
       this.formBodyData = "Invalid";
     }

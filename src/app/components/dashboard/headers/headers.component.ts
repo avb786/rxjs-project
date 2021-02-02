@@ -30,6 +30,11 @@ export class HeadersComponent implements OnInit {
                       icon:'pi pi-list',
                       routerLink: 'viewEncapsulation'
                   },
+                  {
+                    label:'Input Output',
+                    icon:'pi pi-list',
+                    routerLink: 'inputOutput'
+                },
 
                   ]
               },

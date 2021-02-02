@@ -6,6 +6,7 @@ import { ReactiveFormsComponent } from './forms/reactive-forms/reactive-forms.co
 import { FromEventComponent } from './Observables/from-event/from-event.component';
 import { IntervalTimerComponent } from './Observables/interval-timer/interval-timer.component';
 import { ViewEncapsulationComponent } from './view-encapsulation/view-encapsulation.component';
+import { ParentInputComponent } from './input-output/parent-input/parent-input.component';
 
 const routes: Routes = [
   {
@@ -14,7 +15,8 @@ const routes: Routes = [
       { path: 'viewEncapsulation', component: ViewEncapsulationComponent, pathMatch: 'full' },
       { path: 'fromEvent', component: FromEventComponent, pathMatch: 'full' },
       { path: 'intervalTimer', component: IntervalTimerComponent, pathMatch: 'full' },
-      { path: 'reactiveForms', component: ReactiveFormsComponent, pathMatch: 'full' }
+      { path: 'reactiveForms', component: ReactiveFormsComponent, pathMatch: 'full' },
+      { path: 'inputOutput', component: ParentInputComponent, pathMatch: 'full' }
     ]
   },
 

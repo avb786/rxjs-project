@@ -78,8 +78,9 @@ export class HeadersComponent implements OnInit {
                   routerLink: 'ofFromEvent'
               },
               {
-                  label:'Justify',
-                  icon:'pi pi-fw pi-align-justify'
+                  label:'To-Array',
+                  icon:'pi pi-fw pi-align-center',
+                  routerLink: 'toArray'
               },
 
           ]

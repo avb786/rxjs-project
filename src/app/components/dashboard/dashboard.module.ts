@@ -17,9 +17,10 @@ import { ReactiveFormsComponent } from './forms/reactive-forms/reactive-forms.co
 import { ParentInputComponent } from './input-output/parent-input/parent-input.component';
 import { ChildInputComponent } from './input-output/child-input/child-input.component';
 import { OfFromEventComponent } from './Observables/of-from-event/of-from-event.component';
+import { ToArrayComponent } from './Observables/to-array/to-array.component';
 
 @NgModule({
-  declarations: [DashboardComponent, HeadersComponent, ChangeDetectionComponent, ChildComponent, ViewEncapsulationComponent, ChildEncapsulatedComponent, FromEventComponent, IntervalTimerComponent, ReactiveFormsComponent, ParentInputComponent, ChildInputComponent, OfFromEventComponent],
+  declarations: [DashboardComponent, HeadersComponent, ChangeDetectionComponent, ChildComponent, ViewEncapsulationComponent, ChildEncapsulatedComponent, FromEventComponent, IntervalTimerComponent, ReactiveFormsComponent, ParentInputComponent, ChildInputComponent, OfFromEventComponent, ToArrayComponent],
   imports: [
     CommonModule,
     DashboardRoutingModule,

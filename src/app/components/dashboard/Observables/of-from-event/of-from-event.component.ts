@@ -9,20 +9,20 @@ import { RxjsService } from '../services/rxjs.service';
   styleUrls: ['./of-from-event.component.scss']
 })
 export class OfFromEventComponent implements OnInit {
-objMesaages: any;
+  objMesaages: any;
   constructor(
     private _rxjs: RxjsService
   ) { }
 
   ngOnInit(): void {
     // Of operator
-    const observable1 = of("Aayush","Shruti", "Cristano");
+    const observable1 = of("Aayush", "Shruti", "Cristano");
     observable1.subscribe(res => {
       this._rxjs.printToLi(res, 'elContainer')
     })
 
 
-    const observable2 = of({name:"Aayush",name1:"Shruti", name2: "Cristano"});
+    const observable2 = of({ name: "Aayush", name1: "Shruti", name2: "Cristano" });
     observable2.subscribe(res => {
       this.objMesaages = res;
     })
@@ -43,19 +43,16 @@ objMesaages: any;
     })
 
     const from2 = from(promise);
-    from2.subscribe(res=>{
+    from2.subscribe(res => {
       this._rxjs.printToLi(res, 'elContainer3')
     })
 
     // String to observable
 
-  const stringData = from("Cool Hai")
-stringData.subscribe(res => {
-  this._rxjs.printToLi(res, 'elContainer4')
-})
-
+    const stringData = from("Cool Hai")
+    stringData.subscribe(res => {
+      this._rxjs.printToLi(res, 'elContainer4')
+    })
   }
-
-  
 
 }

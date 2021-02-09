@@ -82,6 +82,11 @@ export class HeadersComponent implements OnInit {
                   icon:'pi pi-fw pi-align-center',
                   routerLink: 'toArray'
               },
+              {
+                label:'Custom-Observable',
+                icon:'pi pi-fw pi-align-center',
+                routerLink: 'customObservable'
+            },
 
           ]
       },

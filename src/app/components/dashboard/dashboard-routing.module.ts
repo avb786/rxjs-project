@@ -9,6 +9,7 @@ import { ViewEncapsulationComponent } from './view-encapsulation/view-encapsulat
 import { ParentInputComponent } from './input-output/parent-input/parent-input.component';
 import { OfFromEventComponent } from './Observables/of-from-event/of-from-event.component';
 import { ToArrayComponent } from './Observables/to-array/to-array.component';
+import { CustomObservableComponent } from './Observables/custom-observable/custom-observable.component';
 
 const routes: Routes = [
   {
@@ -20,7 +21,8 @@ const routes: Routes = [
       { path: 'reactiveForms', component: ReactiveFormsComponent, pathMatch: 'full' },
       { path: 'inputOutput', component: ParentInputComponent, pathMatch: 'full' },
       { path: 'ofFromEvent', component: OfFromEventComponent, pathMatch: 'full' },
-      { path: 'toArray', component: ToArrayComponent, pathMatch: 'full' }
+      { path: 'toArray', component: ToArrayComponent, pathMatch: 'full' },
+      { path: 'customObservable', component: CustomObservableComponent, pathMatch: 'full' }
     ]
   },
 

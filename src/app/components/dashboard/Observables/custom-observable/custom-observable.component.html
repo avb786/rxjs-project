@@ -1,0 +1,38 @@
+<div class="container">
+    <h1 class="text-center">Custom Observable</h1><br>
+    <div class="row">
+        <div class="col-md-6">
+            <strong class="text-center">Ex-01 (Manual)</strong>
+            <hr>
+            <ul id="elContainer" [ngClass]="techStatus === 'completed' ? 'completed' : techStatus === 'error' ? 'error' : '' ">
+            </ul>
+        </div>
+
+        <div class="col-md-6">
+            <strong class="text-center">Ex-01 (Custom Interval Observable)</strong>
+            <hr>
+            <ul id="elContainer2" [ngClass]="techStatus2 === 'completed' ? 'completed' : techStatus2 === 'error' ? 'error' : '' ">
+              
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <strong class="text-center">Ex-03 (Random Names)</strong>
+        <hr>
+        <div class="col-md-12">
+            <p class="p-2 bg-light border">
+                <strong>Random Names:</strong> Aayush', 'Shruti', 'Christano', 'Rashmi', 'Kritika', 'Raj'
+            </p>
+            <p>
+                Current Name: <strong [ngClass]="techStatus3 === 'completed' ? 'completed' : techStatus3 === 'error' ? 'text-error' : '' ">{{names}}</strong>
+                <br>
+                <span class="badge" [ngClass]="techStatus3 === 'completed' ? ' badge-success' : techStatus3 === 'error' ? ' badge-error' : '' ">
+                <span style="color: green;" *ngIf="techStatus3 === 'completed'" >Success</span>
+                <span style="color: red;" *ngIf="techStatus3 === 'error'" >Error</span>
+                </span>
+            </p>
+        </div>
+    </div>
+</div>
+
+<p-toast ></p-toast>

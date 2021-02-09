@@ -9,6 +9,7 @@ import {AccordionModule} from 'primeng/accordion';
 import { ChangeDetectionComponent } from './change-detection/change-detection.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ChildComponent } from './change-detection/child/child.component';
+import {ToastModule} from 'primeng/toast';
 import { ViewEncapsulationComponent } from './view-encapsulation/view-encapsulation.component';
 import { ChildEncapsulatedComponent } from './view-encapsulation/child-encapsulated/child-encapsulated.component';
 import { FromEventComponent } from './Observables/from-event/from-event.component';
@@ -18,16 +19,18 @@ import { ParentInputComponent } from './input-output/parent-input/parent-input.c
 import { ChildInputComponent } from './input-output/child-input/child-input.component';
 import { OfFromEventComponent } from './Observables/of-from-event/of-from-event.component';
 import { ToArrayComponent } from './Observables/to-array/to-array.component';
+import { CustomObservableComponent } from './Observables/custom-observable/custom-observable.component';
 
 @NgModule({
-  declarations: [DashboardComponent, HeadersComponent, ChangeDetectionComponent, ChildComponent, ViewEncapsulationComponent, ChildEncapsulatedComponent, FromEventComponent, IntervalTimerComponent, ReactiveFormsComponent, ParentInputComponent, ChildInputComponent, OfFromEventComponent, ToArrayComponent],
+  declarations: [DashboardComponent, HeadersComponent, ChangeDetectionComponent, ChildComponent, ViewEncapsulationComponent, ChildEncapsulatedComponent, FromEventComponent, IntervalTimerComponent, ReactiveFormsComponent, ParentInputComponent, ChildInputComponent, OfFromEventComponent, ToArrayComponent, CustomObservableComponent],
   imports: [
     CommonModule,
     DashboardRoutingModule,
     MenubarModule,
     AccordionModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    ToastModule
   ]
 })
 export class DashboardModule { }

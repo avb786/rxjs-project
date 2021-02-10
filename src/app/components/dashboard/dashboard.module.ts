@@ -20,9 +20,11 @@ import { ChildInputComponent } from './input-output/child-input/child-input.comp
 import { OfFromEventComponent } from './Observables/of-from-event/of-from-event.component';
 import { ToArrayComponent } from './Observables/to-array/to-array.component';
 import { CustomObservableComponent } from './Observables/custom-observable/custom-observable.component';
+import { MapComponent } from './Observables/map/map.component';
+import { PluckComponent } from './Observables/pluck/pluck.component';
 
 @NgModule({
-  declarations: [DashboardComponent, HeadersComponent, ChangeDetectionComponent, ChildComponent, ViewEncapsulationComponent, ChildEncapsulatedComponent, FromEventComponent, IntervalTimerComponent, ReactiveFormsComponent, ParentInputComponent, ChildInputComponent, OfFromEventComponent, ToArrayComponent, CustomObservableComponent],
+  declarations: [DashboardComponent, HeadersComponent, ChangeDetectionComponent, ChildComponent, ViewEncapsulationComponent, ChildEncapsulatedComponent, FromEventComponent, IntervalTimerComponent, ReactiveFormsComponent, ParentInputComponent, ChildInputComponent, OfFromEventComponent, ToArrayComponent, CustomObservableComponent, MapComponent, PluckComponent],
   imports: [
     CommonModule,
     DashboardRoutingModule,

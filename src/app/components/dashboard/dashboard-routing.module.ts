@@ -10,6 +10,8 @@ import { ParentInputComponent } from './input-output/parent-input/parent-input.c
 import { OfFromEventComponent } from './Observables/of-from-event/of-from-event.component';
 import { ToArrayComponent } from './Observables/to-array/to-array.component';
 import { CustomObservableComponent } from './Observables/custom-observable/custom-observable.component';
+import { MapComponent } from './Observables/map/map.component';
+import { PluckComponent } from './Observables/pluck/pluck.component';
 
 const routes: Routes = [
   {
@@ -22,7 +24,9 @@ const routes: Routes = [
       { path: 'inputOutput', component: ParentInputComponent, pathMatch: 'full' },
       { path: 'ofFromEvent', component: OfFromEventComponent, pathMatch: 'full' },
       { path: 'toArray', component: ToArrayComponent, pathMatch: 'full' },
-      { path: 'customObservable', component: CustomObservableComponent, pathMatch: 'full' }
+      { path: 'customObservable', component: CustomObservableComponent, pathMatch: 'full' },
+      { path: 'mapOperator', component: MapComponent, pathMatch: 'full' },
+      { path: 'pluckOperator', component: PluckComponent, pathMatch: 'full' }
     ]
   },
 

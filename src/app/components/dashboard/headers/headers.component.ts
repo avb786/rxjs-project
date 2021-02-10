@@ -87,6 +87,16 @@ export class HeadersComponent implements OnInit {
                 icon:'pi pi-fw pi-align-center',
                 routerLink: 'customObservable'
             },
+            {
+                label:'Map-Operator',
+                icon:'pi pi-fw pi-align-center',
+                routerLink: 'mapOperator'
+            },
+            {
+                label:'Pluck-Operator',
+                icon:'pi pi-fw pi-align-center',
+                routerLink: 'pluckOperator'
+            },
 
           ]
       },

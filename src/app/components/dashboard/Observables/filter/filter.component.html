@@ -1,0 +1,65 @@
+<div class="container">
+    <h1 class="text-center">Filter-Operator</h1>
+    <div class="row">
+        <div class="col-md-4">
+            <strong>Ex-01</strong>
+            <hr>
+            <p class="p-2 bg-light border">
+                <strong>Filter</strong> Filter by length  (greater than 4)
+            </p>
+            <br>
+            <table class="table">
+                <tr>
+                    <th>id</th>
+                    <th>Name</th>
+                </tr>
+                <tr *ngFor="let data of dataProvider"> 
+                    <td>{{data.id}}</td>
+                    <td>{{data.name}}</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="col-md-4">
+            <strong>Ex-02</strong>
+            <hr>
+            <p class="p-2 bg-light border">
+                <strong>Filter</strong> Filter by gender
+            </p>
+            <br>
+            <table class="table">
+                <tr>
+                    <th>id</th>
+                    <th>Name</th>
+                    <th>Gender</th>
+                </tr>
+                <tr *ngFor="let data of dataProvider2"> 
+                    <td>{{data.id}}</td>
+                    <td>{{data.name}}</td>
+                    <td>{{data.gender}}</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="col-md-4">
+            <strong>Ex-03</strong>
+            <hr>
+            <p class="p-2 bg-light border">
+                <strong>Filter</strong> by nth item
+            </p>
+            <br>
+            <table class="table">
+                <tr>
+                    <th>id</th>
+                    <th>Name</th>
+                    <th>Gender</th>
+                </tr>
+                <tr *ngFor="let data of dataProvider3"> 
+                    <td>{{data.id}}</td>
+                    <td>{{data.name}}</td>
+                    <td>{{data.gender}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

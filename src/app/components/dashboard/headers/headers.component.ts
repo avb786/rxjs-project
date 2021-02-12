@@ -97,6 +97,21 @@ export class HeadersComponent implements OnInit {
                 icon:'pi pi-fw pi-align-center',
                 routerLink: 'pluckOperator'
             },
+            {
+                label:'Filter-Operator',
+                icon:'pi pi-fw pi-align-center',
+                routerLink: 'filterOperator'
+            },
+            {
+                label:'Tap-Operator',
+                icon:'pi pi-fw pi-align-center',
+                routerLink: 'tapOperator'
+            },
+            {
+                label:'Take-Operator',
+                icon:'pi pi-fw pi-align-center',
+                routerLink: 'takeOperator'
+            },
 
           ]
       },

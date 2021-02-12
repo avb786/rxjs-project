@@ -12,6 +12,9 @@ import { ToArrayComponent } from './Observables/to-array/to-array.component';
 import { CustomObservableComponent } from './Observables/custom-observable/custom-observable.component';
 import { MapComponent } from './Observables/map/map.component';
 import { PluckComponent } from './Observables/pluck/pluck.component';
+import { FilterComponent } from './Observables/filter/filter.component';
+import { TapComponent } from './Observables/tap/tap.component';
+import { TakeComponent } from './Observables/take/take.component';
 
 const routes: Routes = [
   {
@@ -26,7 +29,10 @@ const routes: Routes = [
       { path: 'toArray', component: ToArrayComponent, pathMatch: 'full' },
       { path: 'customObservable', component: CustomObservableComponent, pathMatch: 'full' },
       { path: 'mapOperator', component: MapComponent, pathMatch: 'full' },
-      { path: 'pluckOperator', component: PluckComponent, pathMatch: 'full' }
+      { path: 'pluckOperator', component: PluckComponent, pathMatch: 'full' },
+      { path: 'filterOperator', component: FilterComponent, pathMatch: 'full' },
+      { path: 'tapOperator', component: TapComponent, pathMatch: 'full' },
+      { path: 'takeOperator', component: TakeComponent, pathMatch: 'full' }
     ]
   },
 

@@ -112,7 +112,11 @@ export class HeadersComponent implements OnInit {
                 icon:'pi pi-fw pi-align-center',
                 routerLink: 'takeOperator'
             },
-
+            {
+                label:'Retry-Operator',
+                icon:'pi pi-fw pi-align-center',
+                routerLink: 'retryOperator'
+            },
           ]
       },
       {

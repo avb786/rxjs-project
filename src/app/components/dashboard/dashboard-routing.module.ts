@@ -15,6 +15,7 @@ import { PluckComponent } from './Observables/pluck/pluck.component';
 import { FilterComponent } from './Observables/filter/filter.component';
 import { TapComponent } from './Observables/tap/tap.component';
 import { TakeComponent } from './Observables/take/take.component';
+import { RetryComponent } from './Observables/retry/retry.component';
 
 const routes: Routes = [
   {
@@ -32,7 +33,8 @@ const routes: Routes = [
       { path: 'pluckOperator', component: PluckComponent, pathMatch: 'full' },
       { path: 'filterOperator', component: FilterComponent, pathMatch: 'full' },
       { path: 'tapOperator', component: TapComponent, pathMatch: 'full' },
-      { path: 'takeOperator', component: TakeComponent, pathMatch: 'full' }
+      { path: 'takeOperator', component: TakeComponent, pathMatch: 'full' },
+      { path: 'retryOperator', component: RetryComponent, pathMatch: 'full' }
     ]
   },
 

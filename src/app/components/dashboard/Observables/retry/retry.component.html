@@ -1,0 +1,48 @@
+<div class="container">
+  <h1 class="text-center">Retry-operator (Retry, retry-When, Scan, Delay)</h1>
+  <br />
+  <div class="row">
+    <div class="col-md-6">
+      <table class="table border">
+        <tbody *ngFor="let person of personsData">
+          <tr>
+            <td>
+              <img
+                class="img-thumbnail"
+                [src]="person.picture.thumbnail"
+                alt="profile_pic"
+              />
+            </td>
+          </tr>
+          <tr>
+            <th>Username : {{ person.login.username }}</th>
+          </tr>
+
+          <tr>
+            <th>Name: {{ person.name.first }} {{ person.name.last }}</th>
+          </tr>
+          <tr>
+            <th>Email : {{ person.email }}</th>
+          </tr>
+          <tr>
+            <th>Gender : {{ person.gender }}</th>
+          </tr>
+        </tbody>
+      </table>
+      <button class="btn btn-primary" (click)="fetchData()" type="button">
+        <span *ngIf="!isLoader">Fetch Details</span>
+        <span *ngIf="isLoader">
+          <span
+            class="spinner-border spinner-border-sm"
+            role="status"
+            aria-hidden="true"
+          ></span>
+          Loading...
+        </span>
+      </button>
+      <p>
+          Status: <b>{{status}}</b>
+      </p>
+    </div>
+  </div>
+</div>

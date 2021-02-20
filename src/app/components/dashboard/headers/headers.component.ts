@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {MenuItem} from 'primeng/api';
+import { RxjsService } from '../Observables/services/rxjs.service';
 
 @Component({
   selector: 'app-headers',
@@ -8,7 +9,10 @@ import {MenuItem} from 'primeng/api';
 })
 export class HeadersComponent implements OnInit {
   public items: MenuItem[] = [];
-  constructor() { }
+  notify: any = 0;
+  constructor(
+      public _rxjs: RxjsService
+  ) { }
 
   ngOnInit(): void {
     this.items = [
@@ -117,6 +121,16 @@ export class HeadersComponent implements OnInit {
                 icon:'pi pi-fw pi-align-center',
                 routerLink: 'retryOperator'
             },
+            {
+                label:'Debounce-Operator',
+                icon:'pi pi-fw pi-align-center',
+                routerLink: 'debounceOperator'
+            },
+            {
+                label:'Subject-Operator',
+                icon:'pi pi-fw pi-align-center',
+                routerLink: 'subjectOperator'
+            },
           ]
       },
       {
@@ -191,6 +205,10 @@ export class HeadersComponent implements OnInit {
           icon:'pi pi-fw pi-power-off'
       }
   ];
+
+  this._rxjs.exclusive.subscribe(res => {
+      this.notify = res
+  })
   }
 
 }

@@ -1,11 +1,13 @@
 import { Injectable } from '@angular/core';
 import  { HttpClient } from '@angular/common/http'
+import { BehaviorSubject, Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class RxjsService {
-
+  exclusive = new Subject<any>();
+  username = new BehaviorSubject<any>('avb786');
   constructor(
     private http: HttpClient
   ) { }

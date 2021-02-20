@@ -16,6 +16,8 @@ import { FilterComponent } from './Observables/filter/filter.component';
 import { TapComponent } from './Observables/tap/tap.component';
 import { TakeComponent } from './Observables/take/take.component';
 import { RetryComponent } from './Observables/retry/retry.component';
+import { DebounceComponent } from './Observables/debounce/debounce.component';
+import { SubjectComponent } from './Observables/subject/subject.component';
 
 const routes: Routes = [
   {
@@ -34,7 +36,9 @@ const routes: Routes = [
       { path: 'filterOperator', component: FilterComponent, pathMatch: 'full' },
       { path: 'tapOperator', component: TapComponent, pathMatch: 'full' },
       { path: 'takeOperator', component: TakeComponent, pathMatch: 'full' },
-      { path: 'retryOperator', component: RetryComponent, pathMatch: 'full' }
+      { path: 'retryOperator', component: RetryComponent, pathMatch: 'full' },
+      { path: 'debounceOperator', component: DebounceComponent, pathMatch: 'full' },
+      { path: 'subjectOperator', component: SubjectComponent, pathMatch: 'full' }
     ]
   },
 

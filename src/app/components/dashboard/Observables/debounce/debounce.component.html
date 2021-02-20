@@ -1,0 +1,30 @@
+<div class="container">
+    <h1 class="text-center">DebounceTime & DistinctUntil Changed -Operator</h1>
+    <div class="row m-5">
+        <div class="col-md-6 border p-4">
+            <strong>Ex-01 DebounceTime</strong>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="my-addon">Email</span>
+                </div>
+                <input class="form-control" #myInput type="text" name="email" placeholder="Recipient's email" aria-label="Recipient's " aria-describedby="my-addon">
+            </div>
+            <p>
+                <span>Requested Data: <strong class="text-success">{{reqData}}</strong></span>
+            </p>
+        </div>
+
+        <div class="col-md-6 border p-4">
+            <strong>Ex-02  DistinctUntil Changed</strong>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="my-addon">Enroll No</span>
+                </div>
+                <input class="form-control" #myInput2 type="text" name="email" placeholder="Recipient's Enroll No." aria-label="Recipient's " aria-describedby="my-addon">
+            </div>
+            <p>
+                <span>Requested Data: <strong class="text-success">{{reqData2}}</strong></span>
+            </p>
+        </div>
+    </div>
+</div>

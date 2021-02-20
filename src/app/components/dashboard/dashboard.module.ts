@@ -26,9 +26,14 @@ import { FilterComponent } from './Observables/filter/filter.component';
 import { TapComponent } from './Observables/tap/tap.component';
 import { TakeComponent } from './Observables/take/take.component';
 import { RetryComponent } from './Observables/retry/retry.component';
+import { DebounceComponent } from './Observables/debounce/debounce.component';
+import { SubjectComponent } from './Observables/subject/subject.component';
+import { Subject1Component } from './Observables/subject/subject1/subject1.component';
+import { Subject2Component } from './Observables/subject/subject2/subject2.component';
+import { Subject3Component } from './Observables/subject/subject3/subject3.component';
 
 @NgModule({
-  declarations: [DashboardComponent, HeadersComponent, ChangeDetectionComponent, ChildComponent, ViewEncapsulationComponent, ChildEncapsulatedComponent, FromEventComponent, IntervalTimerComponent, ReactiveFormsComponent, ParentInputComponent, ChildInputComponent, OfFromEventComponent, ToArrayComponent, CustomObservableComponent, MapComponent, PluckComponent, FilterComponent, TapComponent, TakeComponent, RetryComponent],
+  declarations: [DashboardComponent, HeadersComponent, ChangeDetectionComponent, ChildComponent, ViewEncapsulationComponent, ChildEncapsulatedComponent, FromEventComponent, IntervalTimerComponent, ReactiveFormsComponent, ParentInputComponent, ChildInputComponent, OfFromEventComponent, ToArrayComponent, CustomObservableComponent, MapComponent, PluckComponent, FilterComponent, TapComponent, TakeComponent, RetryComponent, DebounceComponent, SubjectComponent, Subject1Component, Subject2Component, Subject3Component],
   imports: [
     CommonModule,
     DashboardRoutingModule,

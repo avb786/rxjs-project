@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import  { HttpClient } from '@angular/common/http'
-import { BehaviorSubject, Subject } from 'rxjs';
+import { BehaviorSubject, ReplaySubject, Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -8,6 +8,7 @@ import { BehaviorSubject, Subject } from 'rxjs';
 export class RxjsService {
   exclusive = new Subject<any>();
   username = new BehaviorSubject<any>('avb786');
+  videoEmit = new ReplaySubject<any>(3, 5000);
   constructor(
     private http: HttpClient
   ) { }

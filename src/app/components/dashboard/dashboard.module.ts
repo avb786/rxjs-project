@@ -31,9 +31,10 @@ import { SubjectComponent } from './Observables/subject/subject.component';
 import { Subject1Component } from './Observables/subject/subject1/subject1.component';
 import { Subject2Component } from './Observables/subject/subject2/subject2.component';
 import { Subject3Component } from './Observables/subject/subject3/subject3.component';
+import { ReplaySubjectComponent } from './Observables/replay-subject/replay-subject.component';
 
 @NgModule({
-  declarations: [DashboardComponent, HeadersComponent, ChangeDetectionComponent, ChildComponent, ViewEncapsulationComponent, ChildEncapsulatedComponent, FromEventComponent, IntervalTimerComponent, ReactiveFormsComponent, ParentInputComponent, ChildInputComponent, OfFromEventComponent, ToArrayComponent, CustomObservableComponent, MapComponent, PluckComponent, FilterComponent, TapComponent, TakeComponent, RetryComponent, DebounceComponent, SubjectComponent, Subject1Component, Subject2Component, Subject3Component],
+  declarations: [DashboardComponent, HeadersComponent, ChangeDetectionComponent, ChildComponent, ViewEncapsulationComponent, ChildEncapsulatedComponent, FromEventComponent, IntervalTimerComponent, ReactiveFormsComponent, ParentInputComponent, ChildInputComponent, OfFromEventComponent, ToArrayComponent, CustomObservableComponent, MapComponent, PluckComponent, FilterComponent, TapComponent, TakeComponent, RetryComponent, DebounceComponent, SubjectComponent, Subject1Component, Subject2Component, Subject3Component, ReplaySubjectComponent],
   imports: [
     CommonModule,
     DashboardRoutingModule,

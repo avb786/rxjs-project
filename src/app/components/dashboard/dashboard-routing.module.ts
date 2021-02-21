@@ -18,6 +18,7 @@ import { TakeComponent } from './Observables/take/take.component';
 import { RetryComponent } from './Observables/retry/retry.component';
 import { DebounceComponent } from './Observables/debounce/debounce.component';
 import { SubjectComponent } from './Observables/subject/subject.component';
+import { ReplaySubjectComponent } from './Observables/replay-subject/replay-subject.component';
 
 const routes: Routes = [
   {
@@ -38,7 +39,8 @@ const routes: Routes = [
       { path: 'takeOperator', component: TakeComponent, pathMatch: 'full' },
       { path: 'retryOperator', component: RetryComponent, pathMatch: 'full' },
       { path: 'debounceOperator', component: DebounceComponent, pathMatch: 'full' },
-      { path: 'subjectOperator', component: SubjectComponent, pathMatch: 'full' }
+      { path: 'subjectOperator', component: SubjectComponent, pathMatch: 'full' },
+      { path:'replaySubjectOperator', component: ReplaySubjectComponent, pathMatch: 'full' }
     ]
   },
 

@@ -131,6 +131,11 @@ export class HeadersComponent implements OnInit {
                 icon:'pi pi-fw pi-align-center',
                 routerLink: 'subjectOperator'
             },
+            {
+                label:'Replay-Subject-Operator',
+                icon:'pi pi-fw pi-align-center',
+                routerLink: 'replaySubjectOperator'
+            },
           ]
       },
       {

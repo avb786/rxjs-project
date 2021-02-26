@@ -8,6 +8,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DashboardModule } from './components/dashboard/dashboard.module';
 import { HttpClientModule } from '@angular/common/http';
+import { SharedModule } from './shared/shared/shared.module';
+import { LoginModule } from './AuthComponents/login/login.module';
 
 
 
@@ -23,7 +25,9 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     ReactiveFormsModule,
     DashboardModule,
-    HttpClientModule
+    HttpClientModule,
+    SharedModule,
+    LoginModule
   ],
   providers: [],
   bootstrap: [AppComponent]

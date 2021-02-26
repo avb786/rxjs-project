@@ -1,0 +1,40 @@
+<div  class="container-fluid ">
+
+    <div style="height: 3.5rem;" class=" rounded d-flex ">
+        <div class="mr-auto p-1"><img style="height: 50px;" src="https://i.morioh.com/377edecb33.png" alt="rxs" class="img-thumbnail"></div>
+        <div class="p-2"><button class="btn btn-danger">Login</button></div>
+        <div class="p-2"><button class="btn btn-success">SignUp</button></div>
+    </div>
+</div>
+<div style="background-color: #F0F2F5;" class="container-fluid mt-2 border p-2">
+    <div class="row">
+        <div class="col-md-5 ">
+            <p-card>
+                <ng-template pTemplate="header">
+                   <h3 class="text-center text-white bg-secondary border rounded p-2"><i class="fa text-danger fa-lock" aria-hidden="true"></i></h3>
+                </ng-template>
+                <form >
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="username"><i class="fa fa-user-circle-o" aria-hidden="true"></i></span>
+                        </div>
+                        <input class="form-control" type="text" name="username" placeholder="Enter your Username" aria-label="Recipient's " aria-describedby="my-addon">
+                    </div>
+                    <div class="input-group mt-2">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="password"><i class="fa fa-key" aria-hidden="true"></i></span>
+                        </div>
+                        <input class="form-control" type="text" name="password" placeholder="Enter your Password" aria-label="Recipient's " aria-describedby="my-addon">
+                    </div>
+                    <button class="mt-2 btn btn-primary form-control text-white" type="submit">Login</button>
+                </form>
+                <ng-template pTemplate="footer">
+                    <div class="row">
+<div class="col"><a routerLink="/dashboard" href="#"> Forgot password</a></div>
+<div class="col"> <a href="#">Not an Account? Create Here..</a> </div>
+                    </div>
+                </ng-template>
+            </p-card>
+        </div>
+    </div>
+</div>

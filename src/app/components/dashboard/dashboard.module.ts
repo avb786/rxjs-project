@@ -43,6 +43,7 @@ import { ReplaySubjectComponent } from './Observables/replay-subject/replay-subj
     FormsModule,
     ReactiveFormsModule,
     ToastModule
-  ]
+  ],
+  // exports: [HeadersComponent]
 })
 export class DashboardModule { }

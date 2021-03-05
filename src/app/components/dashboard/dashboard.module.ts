@@ -32,9 +32,13 @@ import { Subject1Component } from './Observables/subject/subject1/subject1.compo
 import { Subject2Component } from './Observables/subject/subject2/subject2.component';
 import { Subject3Component } from './Observables/subject/subject3/subject3.component';
 import { ReplaySubjectComponent } from './Observables/replay-subject/replay-subject.component';
+import { AsyncSubjectComponent } from './Observables/async-subject/async-subject.component';
+import { ConcatComponent } from './Observables/concat/concat.component';
+import { MergeComponent } from './Observables/merge/merge.component';
+import { MergeMapComponent } from './Observables/merge-map/merge-map.component';
 
 @NgModule({
-  declarations: [DashboardComponent, HeadersComponent, ChangeDetectionComponent, ChildComponent, ViewEncapsulationComponent, ChildEncapsulatedComponent, FromEventComponent, IntervalTimerComponent, ReactiveFormsComponent, ParentInputComponent, ChildInputComponent, OfFromEventComponent, ToArrayComponent, CustomObservableComponent, MapComponent, PluckComponent, FilterComponent, TapComponent, TakeComponent, RetryComponent, DebounceComponent, SubjectComponent, Subject1Component, Subject2Component, Subject3Component, ReplaySubjectComponent],
+  declarations: [DashboardComponent, HeadersComponent, ChangeDetectionComponent, ChildComponent, ViewEncapsulationComponent, ChildEncapsulatedComponent, FromEventComponent, IntervalTimerComponent, ReactiveFormsComponent, ParentInputComponent, ChildInputComponent, OfFromEventComponent, ToArrayComponent, CustomObservableComponent, MapComponent, PluckComponent, FilterComponent, TapComponent, TakeComponent, RetryComponent, DebounceComponent, SubjectComponent, Subject1Component, Subject2Component, Subject3Component, ReplaySubjectComponent, AsyncSubjectComponent, ConcatComponent, MergeComponent, MergeMapComponent],
   imports: [
     CommonModule,
     DashboardRoutingModule,

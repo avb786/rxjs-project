@@ -19,6 +19,10 @@ import { RetryComponent } from './Observables/retry/retry.component';
 import { DebounceComponent } from './Observables/debounce/debounce.component';
 import { SubjectComponent } from './Observables/subject/subject.component';
 import { ReplaySubjectComponent } from './Observables/replay-subject/replay-subject.component';
+import { AsyncSubjectComponent } from './Observables/async-subject/async-subject.component';
+import { ConcatComponent } from './Observables/concat/concat.component';
+import { MergeComponent } from './Observables/merge/merge.component';
+import { MergeMapComponent } from './Observables/merge-map/merge-map.component';
 
 const routes: Routes = [
   {
@@ -40,7 +44,11 @@ const routes: Routes = [
       { path: 'retryOperator', component: RetryComponent, pathMatch: 'full' },
       { path: 'debounceOperator', component: DebounceComponent, pathMatch: 'full' },
       { path: 'subjectOperator', component: SubjectComponent, pathMatch: 'full' },
-      { path:'replaySubjectOperator', component: ReplaySubjectComponent, pathMatch: 'full' }
+      { path:'replaySubjectOperator', component: ReplaySubjectComponent, pathMatch: 'full' },
+      { path:'asyncSubjectOperator', component: AsyncSubjectComponent, pathMatch: 'full' },
+      { path:'concat', component: ConcatComponent, pathMatch: 'full' },
+      { path:'merge', component: MergeComponent, pathMatch: 'full' },
+      { path:'mergeMap', component: MergeMapComponent, pathMatch: 'full' }
     ]
   },
 

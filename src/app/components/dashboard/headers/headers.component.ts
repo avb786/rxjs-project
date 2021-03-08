@@ -156,6 +156,11 @@ export class HeadersComponent implements OnInit {
                 icon:'pi pi-fw pi-align-center',
                 routerLink: 'mergeMap'
             }, 
+            {
+                label:'Concat-Map',
+                icon:'pi pi-fw pi-align-center',
+                routerLink: 'concatMap'
+            }, 
           ]
       },
       {

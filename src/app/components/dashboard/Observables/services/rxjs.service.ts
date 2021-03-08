@@ -21,6 +21,30 @@ export class RxjsService {
     getEleContainer?.appendChild(eleContainer)
   }
 
+  printPrepend(val: any, containerId: any, header: any, bodyMessage: any, headerColor: any) {
+    let eleContainer = document.createElement('div'); 
+    eleContainer.classList.add('card');
+    eleContainer.classList.add('mb-2');
+    eleContainer.classList.add('cards');
+
+    // <div class="card-body">
+    let eleContainer2 = document.createElement('div'); 
+    eleContainer2.classList.add('card-header');
+    eleContainer2.classList.add('h5');
+    eleContainer2.classList.add(headerColor);
+    eleContainer2.classList.add('text-white');
+    eleContainer2.innerHTML = header;
+
+    let eleContainer3 = document.createElement('div'); 
+    eleContainer3.classList.add('card-body');
+    eleContainer3.innerHTML = bodyMessage;
+
+    eleContainer.appendChild(eleContainer2)
+    eleContainer.appendChild(eleContainer3)
+    const getEleContainer = document.getElementById(containerId);
+    getEleContainer?.prepend(eleContainer)
+  }
+
   fetchData() {
     return this.http.get('https://randomuser.me/api/')
 

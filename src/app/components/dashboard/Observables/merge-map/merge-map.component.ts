@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { from, of } from 'rxjs';
-import { map } from 'rxjs/operators';
+import { map, mergeAll, mergeMap } from 'rxjs/operators';
 import { RxjsService } from '../services/rxjs.service';
 
 @Component({
@@ -32,9 +32,18 @@ export class MergeMapComponent implements OnInit {
 
       // Ex-02 Map + MergeAll
       source.pipe(
-        map(res => this.getData(res))
+        map(res => this.getData(res)),
+        mergeAll()
       ).subscribe(res => {
-        console.log(res)
+      this._rxjs.printToLi(res, 'elContainer2')       
+      })
+
+
+      // Ex-03 MergeMap
+      source.pipe(
+        mergeMap(res => this.getData(res))
+            ).subscribe(res => {
+      this._rxjs.printToLi(res, 'elContainer3')       
       })
 
   }

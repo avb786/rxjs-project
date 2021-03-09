@@ -1,11 +1,13 @@
 import { Injectable } from '@angular/core';
 import  { HttpClient } from '@angular/common/http'
-import { BehaviorSubject, ReplaySubject, Subject, AsyncSubject } from 'rxjs';
+import { BehaviorSubject, ReplaySubject, Subject, AsyncSubject, Observable } from 'rxjs';
+import { Search } from '../../../../shared/interface/search.interface';
 
 @Injectable({
   providedIn: 'root'
 })
 export class RxjsService {
+  url="https://jsonplaceholder.typicode.com/comments"
   exclusive = new Subject<any>();
   username = new BehaviorSubject<any>('avb786');
   videoEmit = new ReplaySubject<any>(3, 5000);
@@ -43,6 +45,12 @@ export class RxjsService {
     eleContainer.appendChild(eleContainer3)
     const getEleContainer = document.getElementById(containerId);
     getEleContainer?.prepend(eleContainer)
+  }
+
+  getsearches(postId: any) {
+    const params: any = {}
+    params['postId'] = postId
+    return this.http.get(this.url,{params:params})
   }
 
   fetchData() {

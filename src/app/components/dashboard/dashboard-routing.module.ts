@@ -24,6 +24,7 @@ import { ConcatComponent } from './Observables/concat/concat.component';
 import { MergeComponent } from './Observables/merge/merge.component';
 import { MergeMapComponent } from './Observables/merge-map/merge-map.component';
 import { ConcatMapComponent } from './Observables/concat-map/concat-map.component';
+import { SwitchMapComponent } from './Observables/switch-map/switch-map.component';
 
 const routes: Routes = [
   {
@@ -50,7 +51,8 @@ const routes: Routes = [
       { path:'concat', component: ConcatComponent, pathMatch: 'full' },
       { path:'merge', component: MergeComponent, pathMatch: 'full' },
       { path:'mergeMap', component: MergeMapComponent, pathMatch: 'full' },
-      { path:'concatMap', component: ConcatMapComponent, pathMatch: 'full' }
+      { path:'concatMap', component: ConcatMapComponent, pathMatch: 'full' },
+      { path:'switchMap', component: SwitchMapComponent, pathMatch: 'full' },
     ]
   },
 

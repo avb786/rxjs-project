@@ -161,6 +161,11 @@ export class HeadersComponent implements OnInit {
                 icon:'pi pi-fw pi-align-center',
                 routerLink: 'concatMap'
             }, 
+            {
+                label:'Switch-Map',
+                icon:'pi pi-fw pi-align-center',
+                routerLink: 'switchMap'
+            }
           ]
       },
       {

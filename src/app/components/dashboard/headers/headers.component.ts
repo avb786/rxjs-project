@@ -150,6 +150,36 @@ export class HeadersComponent implements OnInit {
                 icon:'pi pi-fw pi-align-center',
                 routerLink: 'replaySubjectOperator'
             },
+            {
+                label:'Async-Subject-Operator',
+                icon:'pi pi-fw pi-align-center',
+                routerLink: 'asyncSubjectOperator'
+            },
+            {
+                label:'Concat-Operator',
+                icon:'pi pi-fw pi-align-center',
+                routerLink: 'concat'
+            },
+            {
+                label:'Merge-Operator',
+                icon:'pi pi-fw pi-align-center',
+                routerLink: 'merge'
+            }, 
+            {
+                label:'Merge-Map',
+                icon:'pi pi-fw pi-align-center',
+                routerLink: 'mergeMap'
+            }, 
+            {
+                label:'Concat-Map',
+                icon:'pi pi-fw pi-align-center',
+                routerLink: 'concatMap'
+            }, 
+            {
+                label:'Switch-Map',
+                icon:'pi pi-fw pi-align-center',
+                routerLink: 'switchMap'
+            }
           ]
       },
       {

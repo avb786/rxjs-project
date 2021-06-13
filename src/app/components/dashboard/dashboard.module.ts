@@ -37,9 +37,15 @@ import { Dummy1Component } from './entry-components/dummy1/dummy1.component';
 import { CropElementComponent } from './crop-element/crop-element.component';
 import { ImageCropperModule } from 'ngx-image-cropper';
 import { NgrxComponent } from './ngrx/ngrx.component';
+import { AsyncSubjectComponent } from './Observables/async-subject/async-subject.component';
+import { ConcatComponent } from './Observables/concat/concat.component';
+import { MergeComponent } from './Observables/merge/merge.component';
+import { MergeMapComponent } from './Observables/merge-map/merge-map.component';
+import { ConcatMapComponent } from './Observables/concat-map/concat-map.component';
+import { SwitchMapComponent } from './Observables/switch-map/switch-map.component';
 
 @NgModule({
-  declarations: [DashboardComponent, HeadersComponent, ChangeDetectionComponent, ChildComponent, ViewEncapsulationComponent, ChildEncapsulatedComponent, FromEventComponent, IntervalTimerComponent, ReactiveFormsComponent, ParentInputComponent, ChildInputComponent, OfFromEventComponent, ToArrayComponent, CustomObservableComponent, MapComponent, PluckComponent, FilterComponent, TapComponent, TakeComponent, RetryComponent, DebounceComponent, SubjectComponent, Subject1Component, Subject2Component, Subject3Component, ReplaySubjectComponent, EntryComponentsComponent, Dummy1Component, CropElementComponent, NgrxComponent],
+  declarations: [DashboardComponent, HeadersComponent, ChangeDetectionComponent, ChildComponent, ViewEncapsulationComponent, ChildEncapsulatedComponent, FromEventComponent, IntervalTimerComponent, ReactiveFormsComponent, ParentInputComponent, ChildInputComponent, OfFromEventComponent, ToArrayComponent, CustomObservableComponent, MapComponent, PluckComponent, FilterComponent, TapComponent, TakeComponent, RetryComponent, DebounceComponent, SubjectComponent, Subject1Component, Subject2Component, Subject3Component, ReplaySubjectComponent, AsyncSubjectComponent, ConcatComponent, MergeComponent, MergeMapComponent, ConcatMapComponent, SwitchMapComponent],
   imports: [
     CommonModule,
     DashboardRoutingModule,

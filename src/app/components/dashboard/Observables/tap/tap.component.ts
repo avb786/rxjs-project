@@ -24,7 +24,7 @@ export class TapComponent implements OnInit {
       { id: 3, name: 'Yash' },
       { id: 4, name: 'Raish' },
       { id: 5, name: 'Vola' },
-      { id: 6, name: 'Shrushti' },
+      { id: 6, name: 'Shrushtika' },
     ]
 
     this.subs1 = source.

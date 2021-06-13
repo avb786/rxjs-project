@@ -39,7 +39,21 @@ export class HeadersComponent implements OnInit {
                     icon:'pi pi-list',
                     routerLink: 'inputOutput'
                 },
-
+                {
+                    label:'Entry Components',
+                    icon:'pi pi-list',
+                    routerLink: 'entryComponents'
+                },
+                {
+                    label: 'Crop-Element',
+                    icon:'pi pi-list',
+                    routerLink: 'cropElement'
+                },
+                {
+                    label: 'Ngrx',
+                    icon:'pi pi-list',
+                    routerLink: 'ngrx'
+                }
                   ]
               },
               {

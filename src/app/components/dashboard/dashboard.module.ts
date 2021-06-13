@@ -32,9 +32,14 @@ import { Subject1Component } from './Observables/subject/subject1/subject1.compo
 import { Subject2Component } from './Observables/subject/subject2/subject2.component';
 import { Subject3Component } from './Observables/subject/subject3/subject3.component';
 import { ReplaySubjectComponent } from './Observables/replay-subject/replay-subject.component';
+import { EntryComponentsComponent } from './entry-components/entry-components.component';
+import { Dummy1Component } from './entry-components/dummy1/dummy1.component';
+import { CropElementComponent } from './crop-element/crop-element.component';
+import { ImageCropperModule } from 'ngx-image-cropper';
+import { NgrxComponent } from './ngrx/ngrx.component';
 
 @NgModule({
-  declarations: [DashboardComponent, HeadersComponent, ChangeDetectionComponent, ChildComponent, ViewEncapsulationComponent, ChildEncapsulatedComponent, FromEventComponent, IntervalTimerComponent, ReactiveFormsComponent, ParentInputComponent, ChildInputComponent, OfFromEventComponent, ToArrayComponent, CustomObservableComponent, MapComponent, PluckComponent, FilterComponent, TapComponent, TakeComponent, RetryComponent, DebounceComponent, SubjectComponent, Subject1Component, Subject2Component, Subject3Component, ReplaySubjectComponent],
+  declarations: [DashboardComponent, HeadersComponent, ChangeDetectionComponent, ChildComponent, ViewEncapsulationComponent, ChildEncapsulatedComponent, FromEventComponent, IntervalTimerComponent, ReactiveFormsComponent, ParentInputComponent, ChildInputComponent, OfFromEventComponent, ToArrayComponent, CustomObservableComponent, MapComponent, PluckComponent, FilterComponent, TapComponent, TakeComponent, RetryComponent, DebounceComponent, SubjectComponent, Subject1Component, Subject2Component, Subject3Component, ReplaySubjectComponent, EntryComponentsComponent, Dummy1Component, CropElementComponent, NgrxComponent],
   imports: [
     CommonModule,
     DashboardRoutingModule,
@@ -42,8 +47,10 @@ import { ReplaySubjectComponent } from './Observables/replay-subject/replay-subj
     AccordionModule,
     FormsModule,
     ReactiveFormsModule,
-    ToastModule
+    ToastModule,
+    ImageCropperModule
   ],
+  entryComponents:[Dummy1Component]
   // exports: [HeadersComponent]
 })
 export class DashboardModule { }

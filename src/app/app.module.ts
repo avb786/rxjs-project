@@ -1,3 +1,4 @@
+import "@angular/compiler";
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -10,12 +11,17 @@ import { DashboardModule } from './components/dashboard/dashboard.module';
 import { HttpClientModule } from '@angular/common/http';
 import { SharedModule } from './shared/shared/shared.module';
 import { LoginModule } from './AuthComponents/login/login.module';
+import { PlaceholderDirective } from './shared/shared/placeholder.directive';
+import { StoreModule } from '@ngrx/store';
+import { reducers, metaReducers } from './reducers';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    PlaceholderDirective
+
   ],
   imports: [
     BrowserModule,
@@ -27,7 +33,10 @@ import { LoginModule } from './AuthComponents/login/login.module';
     DashboardModule,
     HttpClientModule,
     SharedModule,
-    LoginModule
+    LoginModule,
+    StoreModule.forRoot(reducers, {
+      metaReducers
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent]

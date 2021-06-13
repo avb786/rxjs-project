@@ -1,0 +1,17 @@
+<div class="conatiner">
+<h1>Entry Component</h1>
+<div class="row">
+    <button (click)="showComponentDynamically()" class=" btn btn-primary btn btn-lg text-center mx-auto">Insert Component Below</button>
+    <button (click)="showDummyComponentDynamically('dummy')" class="btn btn-warning mx-auto">Dummy Component Display</button>
+    <button (click)="showDummyComponentDynamically('input')" class="btn btn-warning mx-auto">Input Component Display</button>
+</div>
+<hr>
+<div class="row">
+    <div class="col-6">
+        <ng-template appPlaceholder></ng-template>
+    </div>
+    <div class="col-6 border">
+        <ng-container *ngComponentOutlet="dummyComponent"></ng-container>
+    </div>
+</div>
+</div>

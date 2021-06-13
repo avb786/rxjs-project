@@ -19,6 +19,9 @@ import { RetryComponent } from './Observables/retry/retry.component';
 import { DebounceComponent } from './Observables/debounce/debounce.component';
 import { SubjectComponent } from './Observables/subject/subject.component';
 import { ReplaySubjectComponent } from './Observables/replay-subject/replay-subject.component';
+import { EntryComponentsComponent } from './entry-components/entry-components.component';
+import { CropElementComponent } from './crop-element/crop-element.component';
+import { NgrxComponent } from './ngrx/ngrx.component';
 
 const routes: Routes = [
   {
@@ -40,7 +43,10 @@ const routes: Routes = [
       { path: 'retryOperator', component: RetryComponent, pathMatch: 'full' },
       { path: 'debounceOperator', component: DebounceComponent, pathMatch: 'full' },
       { path: 'subjectOperator', component: SubjectComponent, pathMatch: 'full' },
-      { path:'replaySubjectOperator', component: ReplaySubjectComponent, pathMatch: 'full' }
+      { path:'replaySubjectOperator', component: ReplaySubjectComponent, pathMatch: 'full' },
+      { path:'entryComponents', component: EntryComponentsComponent, pathMatch: 'full' },
+      { path:'cropElement', component: CropElementComponent, pathMatch: 'full' },
+      { path:'ngrx', component: NgrxComponent, pathMatch: 'full' },
     ]
   },
 

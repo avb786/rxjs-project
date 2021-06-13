@@ -1,0 +1,76 @@
+<!-- <div class="container">    
+
+    <div class="card">
+
+      <div class="card-header">
+
+          Angular Crop Image Tutorial Example - HDTuto.com
+
+      </div>
+
+      <div class="card-body">
+
+        <input type="file" (change)="fileChangeEvent($event)" />
+
+        <div class="row" style="margin-top: 15px;">
+
+            <div class="text-center col-md-8">
+
+                <h5 id="crops">Crop Image</h5>
+
+                <image-cropper 
+
+                [imageChangedEvent]="imageChangedEvent" 
+
+                [maintainAspectRatio]="true" 
+
+                [aspectRatio]="1 / 1"
+
+                [resizeToWidth]="130" 
+                [resizeToHeight]="130" 
+                [alignImage] = "'center'"
+                format="png" 
+
+                (imageCropped)="imageCropped($event)" 
+
+                (imageLoaded)="imageLoaded()"
+
+                (cropperReady)="cropperReady()" 
+
+                (loadImageFailed)="loadImageFailed()"></image-cropper>
+
+            </div>
+
+            <div class="text-center col-md-4">
+
+                <h5>Preview</h5>
+
+                <img [src]="croppedImage" />
+
+            </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+</div> -->
+
+<div class="container bg-primary">
+    <div class="row">
+        <div class="col-6">
+            <img #image   [src]="imageUrl"  crossorigin="anonymous" />
+        </div>
+        <div class="col-6">
+            <img  [src]="imageUrlDest" crossorigin="anonymous" />
+        </div>
+    </div>
+</div>
+
+
+<div>
+<button (click)="submitImage()">Submit Image</button>
+<img *ngIf="isSubmit" src="{{imageUrlDest}}" />
+
+</div>

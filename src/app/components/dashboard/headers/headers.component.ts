@@ -50,6 +50,11 @@ export class HeadersComponent implements OnInit {
                     routerLink: 'cropElement'
                 },
                 {
+                    label: 'Custom Directives',
+                    icon: 'pi pi-list',
+                    routerLink: 'customDirectives'
+                 },
+                {
                     label: 'Ngrx',
                     icon:'pi pi-list',
                     routerLink: 'ngrx'

@@ -43,9 +43,11 @@ import { MergeComponent } from './Observables/merge/merge.component';
 import { MergeMapComponent } from './Observables/merge-map/merge-map.component';
 import { ConcatMapComponent } from './Observables/concat-map/concat-map.component';
 import { SwitchMapComponent } from './Observables/switch-map/switch-map.component';
+import { CustomDirectivesComponent } from './custom-directives/custom-directives.component';
+import { DemoDirective } from './demo.directive';
 
 @NgModule({
-  declarations: [DashboardComponent, HeadersComponent, ChangeDetectionComponent, ChildComponent, ViewEncapsulationComponent, ChildEncapsulatedComponent, FromEventComponent, IntervalTimerComponent, ReactiveFormsComponent, ParentInputComponent, ChildInputComponent, OfFromEventComponent, ToArrayComponent, CustomObservableComponent, MapComponent, PluckComponent, FilterComponent, TapComponent, TakeComponent, RetryComponent, DebounceComponent, SubjectComponent, Subject1Component, Subject2Component, Subject3Component, ReplaySubjectComponent, AsyncSubjectComponent, ConcatComponent, MergeComponent, MergeMapComponent, ConcatMapComponent, SwitchMapComponent],
+  declarations: [DashboardComponent, HeadersComponent, ChangeDetectionComponent, ChildComponent, ViewEncapsulationComponent, ChildEncapsulatedComponent, FromEventComponent, IntervalTimerComponent, ReactiveFormsComponent, ParentInputComponent, ChildInputComponent, OfFromEventComponent, ToArrayComponent, CustomObservableComponent, MapComponent, PluckComponent, FilterComponent, TapComponent, TakeComponent, RetryComponent, DebounceComponent, SubjectComponent, Subject1Component, Subject2Component, Subject3Component, ReplaySubjectComponent, AsyncSubjectComponent, ConcatComponent, MergeComponent, MergeMapComponent, ConcatMapComponent, SwitchMapComponent, CustomDirectivesComponent, DemoDirective, ],
   imports: [
     CommonModule,
     DashboardRoutingModule,

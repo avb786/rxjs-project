@@ -14,14 +14,14 @@ import { LoginModule } from './AuthComponents/login/login.module';
 import { PlaceholderDirective } from './shared/shared/placeholder.directive';
 import { StoreModule } from '@ngrx/store';
 import { reducers, metaReducers } from './reducers';
+import { ColorChangeDirective } from './services/color-change.directive';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    PlaceholderDirective
-
+    PlaceholderDirective,
   ],
   imports: [
     BrowserModule,
